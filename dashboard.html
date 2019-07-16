@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Test</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body onload="openJobMenu()" ;>
+
+
+    </head>
+
+    <body>
+        <div class="topCon">
+            <h2 id="topTitle">Dashboard</h2>
+            <h2 id="title">Busy</h2>
+            <div id="myLinks">
+                <a class="button buttonSmall" target="_blank" href="index.html">Main</a>
+                <a class="button buttonSmall" target="_blank"href="codeSearch.html">Code Search</a>
+                <a class="button buttonSmall" target="_blank" href="callSignSearch.html">Callsigns</a>
+                <a class="button buttonSmall" target="_blank" href="frequency.html">Frequency</a>
+                <a class="button buttonSmall" target="_blank" href="plateSearch.html">Plate Search</a>
+            </div>
+            <button class="navButton" onclick="myFunction()"> X </button>
+            
+        </div>
+
+        <div id="buttonRow">
+            <input class="dashRow button buttonBig" type="button" value="10-2" onclick="changeEnroute();" />
+            <input class="dashRow button buttonBig" type="button" value="10-7" onclick="changeArrived();" />
+            <input class="dashRow button buttonBig" type="button" value="Clear" onclick="clearJob();" />
+        </div>
+         
+        <div class="contentMainBox">
+            <ul id="jobDetails">
+            </ul>
+        </div>
+        
+        <div id="bottonButtonRow">
+            <input class="dashRow button buttonBig" type="button" value="Add Update" onclick="editJob();" />
+            <input class="dashRow button buttonBig" type="button" value="Plate Search" onclick="openPlate();" />
+            <input class="dashRow button buttonBig mobileHide" type="button" value="Map" onclick="openMap();" />   
+        </div>
+        
+        <div id="Jobmenu">
+            <h2 class="jobTitle"> Job update</h2>
+            <textarea class="updateBox" id="updateBox" rows="2" cols="40"> 
+            </textarea> <br> 
+            <button class="button buttonSmall" id="updateButton" onclick="update()">Update</button> 
+            <input class="button buttonSmall" type="button" value="Close" onclick="editJob();" />
+        </div>
+
+
+
+        <div id="clearMenu">
+            <h2>Clear</h2>
+            <input class="button buttonSmall" type="button" value="  K1  " onclick="jobK1();" />
+            <input class="button buttonSmall" type="button" value="  K6  " onclick="jobK6();" />
+            <input class="button buttonSmall" type="button" value="  K9  " onclick="jobK9();" />
+            <input class="button buttonSmall" type="button" value=" Other " onclick="jobOther();" /> <br>  
+            <input class="button buttonSmall" type="button" value="Hide" onclick="clearJob();" />
+
+        </div>
+
+        <div id="newJobmenu">
+            <div id="newJobContent"> 
+            <h4 class="jobTitle">New Job</h4>
+            <p class="jobP"> Location:</p> 
+            <input class="buttonSmall" id="location" type="text"> <br>
+            <p class="jobP"> Code:</p>
+            <input class="buttonSmall" id="code" type="text"> <br>
+            <p class="jobP"> Description:</p>
+            <input class="buttonSmall" id="description" type="text"> <br>
+            <p class="jobP"> Plate:</p>
+            <input class="buttonSmall" id="plate" type="text"> <br>
+            <p class="jobP"> Units:</p>
+            <input class="buttonSmall" id="unit" type="text"> <br>
+
+            
+            <input class="button buttonSmall" type="button" value="Submit" onclick="collectInfo();" />
+            </div>    
+        </div>
+        
+        <div id="plateSearchMenu"> 
+            <h4 class="jobTitle">Enter Plate</h4>
+            <input class="button buttonSmall" type="text" id="userPlate"/> <br>
+            <input class="button buttonSmall" type="submit" value="Search" onclick="searchPlate()"/> <br>
+            <input class="button buttonSmall" type="submit" value="Close" onclick="openPlate()"/>
+        </div>
+        
+</html>
