@@ -154,7 +154,7 @@ li {
 
 #newJobmenu {
     display: block;
-    background-color: rgb(211, 211, 211, 0.9);
+    background-color: #A9A9A9;
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -170,8 +170,8 @@ li {
 }
 #jobMenu {
     display: none;
-    background-color: rgb(169, 169, 169, 0.9);
-    z-index: 1;
+    background-color: #A9A9A9;
+    z-index: 5;
     position: absolute;
     width: 100%;
     height: 30vh;
@@ -191,7 +191,7 @@ li {
 #clearMenu,
 #plateSearchMenu {
     display: none;
-    background-color: rgb(211, 211, 211, 0.9);
+    background-color: #A9A9A9;
     z-index: 1;
     position: absolute;
     width: 100%;
@@ -220,7 +220,7 @@ li {
     }
     #myLinks {
         position: relative;
-        background-color: rgb(211, 211, 211, 0.9);
+        background-color: #A9A9A9;
         z-index: 10;
         width: 100%;
         height:  90vh
@@ -249,7 +249,6 @@ li {
     .buttonSmall {
     font-size: 2.5vh;
     border: 2px solid black;
-    border-radius: 5px;
     padding: 2% 3%;
     margin-top: 2%;
     }
