@@ -76,6 +76,7 @@ li {
     text-decoration: none;
     text-align: center;
     padding-top: 3%;
+    -webkit-appearance: none;
 }
 
 .buttonBig {
