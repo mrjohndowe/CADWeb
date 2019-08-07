@@ -125,29 +125,80 @@ function clearJob() {
 
 function jobK1() {
     alert("Job K1");
-    console.log("Job k1 cheif");
-    window.location = "index.html"; // Needs to be changed to home home page
+    var d = new Date();
+    var h = addZero(d.getHours());
+    var m = addZero(d.getMinutes());
+    var s = addZero(d.getSeconds());
+    var time = h + ":" + m + ":" + s;
+    var textbox = "Job K1";
+
+    var newMessage = document.createElement("LI");
+    console.log(textbox); // Console.log of input from text box
+    var full = time + ": "+ textbox; // combines the time and user input
+    console.log(full);
+    var node = document.createElement("li"); // Finding the li 
+    var textnode = document.createTextNode(full); // Create the node with the full text
+    node.appendChild(textnode);
+    document.getElementById("jobDetails").appendChild(node);
 }
 
 function jobK6() {
     alert("Job K6");
-    console.log("Job k6 cheif");
-    window.location = "index.html"; // Needs to be changed to home home page
+    var d = new Date();
+    var h = addZero(d.getHours());
+    var m = addZero(d.getMinutes());
+    var s = addZero(d.getSeconds());
+    var time = h + ":" + m + ":" + s;
+    var textbox = "Job K6";
+
+    var newMessage = document.createElement("LI");
+    console.log(textbox); // Console.log of input from text box
+    var full = time + ": "+ textbox; // combines the time and user input
+    console.log(full);
+    var node = document.createElement("li"); // Finding the li 
+    var textnode = document.createTextNode(full); // Create the node with the full text
+    node.appendChild(textnode);
+    document.getElementById("jobDetails").appendChild(node);
 }
 
 function jobK9() {
     alert("Job K9");
-    console.log("Job k9 cheif");
-    window.location = "index.html"; // Needs to be changed to home home page
+    var d = new Date();
+    var h = addZero(d.getHours());
+    var m = addZero(d.getMinutes());
+    var s = addZero(d.getSeconds());
+    var time = h + ":" + m + ":" + s;
+    var textbox = "Job K9";
+
+    var newMessage = document.createElement("LI");
+    console.log(textbox); // Console.log of input from text box
+    var full = time + ": "+ textbox; // combines the time and user input
+    console.log(full);
+    var node = document.createElement("li"); // Finding the li 
+    var textnode = document.createTextNode(full); // Create the node with the full text
+    node.appendChild(textnode);
+    document.getElementById("jobDetails").appendChild(node);
 }
 
 function jobOther() {
     var otherReason = prompt("Clear the job?(Reason)");
     alert("Job Cleared for other reason: " + otherReason)
-    console.log("Job othered cheif");
-    window.location = "index.html"; // Needs to be changed to home home page
-}
+    var d = new Date();
+    var h = addZero(d.getHours());
+    var m = addZero(d.getMinutes());
+    var s = addZero(d.getSeconds());
+    var time = h + ":" + m + ":" + s;
+    var textbox = "Job Othered: " + otherReason;
 
+    var newMessage = document.createElement("LI");
+    console.log(textbox); // Console.log of input from text box
+    var full = time + ": "+ textbox; // combines the time and user input
+    console.log(full);
+    var node = document.createElement("li"); // Finding the li 
+    var textnode = document.createTextNode(full); // Create the node with the full text
+    node.appendChild(textnode);
+    document.getElementById("jobDetails").appendChild(node);
+}
 function editJob() {
     var Jobmenu = document.getElementById('Jobmenu')
     if (Jobmenu.style.display == "block") {
